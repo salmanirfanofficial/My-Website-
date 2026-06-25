@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@assets/IMG_20240101_001117_893.jpg_1782371794438.jpeg";
 
@@ -38,6 +38,11 @@ export function Hero() {
               <Button size="lg" variant="outline" className="h-14 px-8 text-base rounded-full font-semibold border-white/10 hover:bg-white/5" asChild data-testid="button-contact">
                 <a href="#contact">
                   Let's Talk
+                </a>
+              </Button>
+              <Button size="lg" variant="ghost" className="h-14 px-8 text-base rounded-full font-semibold text-muted-foreground hover:text-white hover:bg-white/5" asChild data-testid="button-download-cv">
+                <a href="/salman-irfan-resume.pdf" download="Salman-Irfan-Resume.pdf">
+                  <Download className="mr-2 h-5 w-5" /> Download CV
                 </a>
               </Button>
             </div>
